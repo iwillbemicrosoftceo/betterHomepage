@@ -1,11 +1,73 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Better Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Homepage</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            position: relative; /* Needed for absolute positioning of the footer */
+        }
+    
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+    
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            margin-bottom: 0px;
+        }
+    
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed; /* Make the footer fixed */
+            bottom: 0; /* Stick it to the bottom */
+            left: 0; /* Align it to the left */
+        }
+    </style>    
 </head>
 <body>
-  <center>
-    <h1>Our site is down right now...</h1><br /><p></p>Downtime until 9 April 2025</p><br /><p>Made by Krishna Murthy</p>
-  </center>
+    <p><label for="gim">Join Gimkit:</label></p>
+    <input type="text" name="gim" id="gim">
+    <button id="gimjoin">Join</button>
+    <p><label for="koot">Join Kahoot:</label></p>
+    <input type="text" name="koot" id="koot">
+    <button id="kootjoin">Join</button>
+    <p><label for="near">Join Nearpod:</label></p>
+    <input type="text" name="near" id="near">
+    <button id="nearjoin">Join</button>
+    <p><label for="blook">Join Blooket:</label></p>
+    <input type="text" name="blook" id="blook">
+    <button id="blookjoin">Join</button>
+    <footer>
+        <p>Made by Krishna Murthy</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
